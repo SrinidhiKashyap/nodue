@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet" href="headfoot.css">
+        <title>Home page</title>
+        <style>
+        form {
+            border: 5px solid #f1f1f1;
+            width: 700px;
+            text-align: center;
+        }
+        button {
+  	        background-color: #f5ad42;
+  	        color: white;
+  	        padding: 14px 20px;
+  	        margin: 8px 0;
+  	        border: none;
+  	        cursor: pointer;
+  	        width: 25%;
+	    }
+        body {
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             height: 750px; /* This will make the body take up the full height of the viewport */
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <img src="logo-login.jpeg" alt="Paris" style="height: 58px; width: 400px;">
+                
+            </div>
+        </header>
+         <img src="sjce.jpg" alt="SJCE" style="width:20%">
+         <form action="login" method="get">
+            <h1>JSS SCIENCE AND TECHNOLOGY UNIVERSITY MYSORE</h1>
+            <button formaction="newreq">New Requests</button><br>
+            <button formaction="oldreq">Seen Requests</button><br><br>
+           <button type="submit"  style="padding: 10px 10px; margin-left: 550px; width: 10%;">logout</button>
+        </form>
+    </body>
+</html>

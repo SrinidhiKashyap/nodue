@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="headfoot.css">
+</head>
+<body>
+    <header>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <img src="headfoot-Logo.png" alt="SJCE" style="height: 55px; width: 80px;">
+          <div style="display: flex;">
+            <a href="/">Home</a>
+            <a href="aboutus">Our Team</a>
+            <a href="contactus">Contact Us</a>
+            <a href="login">Login/Register</a>
+          </div>
+        </div>
+      </header>
+      <div class="cont">
+    <img src="sjce.jpg" alt="University Logo" style="width:20%">
+    <form action="/register" method="POST" id="registration-form">
+        <h2 style="">JSS SCIENCE AND TECHNOLOGY UNIVERSITY MYSORE</h2>
+        <p style="font-size: 23px; color: #f5ad42;">Registration</p>
+        <div class="form-group">
+            <label for="userid"><b>USN</b></label><br>
+            <input type="text" placeholder="Enter ID"  id="userid" name="userid" required>
+        </div>
+            <label for="email"><b>Email ID</b></label><br>
+            <input type="mail" placeholder="Enter Email ID" id="email" name="email" required>
+        <br><br>
+        <button type="submit" class="btn btn-primary" style="background-color: #f5ad42;border-color: #f5ad42; ">Submit</button><br><br>
+        <p><a href="login" style="color: #f5ad42;
+          background-color: transparent;
+          text-decoration: none;"><-- Back</a></p> 
+    </form> 
+    </div>
+    </body>
+</script>
+<footer>
+    Copyright &copy; 2023
+  </footer>
+</body>
+</html>

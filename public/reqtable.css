@@ -1,0 +1,66 @@
+* {
+    /* Change your font family */
+    font-family: sans-serif;
+    
+}
+
+.content-table {
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 1.2em;
+    border-radius: 15px 15px 15px 15px;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 100px;
+}
+
+.content-table thead tr {
+    background-color: #c97a03;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 15px 30px;
+}
+
+.content-table tbody tr {
+    border-bottom: 2px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+    
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 1px solid #c97a03;
+}
+.request-button {
+    background-color: #f5ad42;
+    font-weight: bold;
+    color: #f5ad42;
+  }
+button {
+    background-color: #f5ad42;
+    color: white;
+    padding: 10px 10px;
+    margin-left: 750px;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+  }
+.btn {
+    background-color:  #f5ad42;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+  }
+  
+  .btn:hover {
+    background-color: #c97a03;
+    color: white;
+  }

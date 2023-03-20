@@ -1,0 +1,35 @@
+header {
+  background-color: #f5ad42;
+  padding: 20px;
+  text-align: right;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  }
+
+header a {
+  color: white;
+  font-size: 140%;
+  text-decoration: none;
+  margin-right: 20px;
+  transition: all 0.5s ease;
+  }
+
+header a:hover {
+  color: #f5ad42;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  }
+footer {
+  background-color: #f5ad42;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  }

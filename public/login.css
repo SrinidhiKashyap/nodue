@@ -1,0 +1,136 @@
+body {
+    
+    padding-top: 5%;
+    justify-content:center;
+    align-items: center;
+    height: 15%; /* This will make the body take up the full height of the viewport */
+  }
+
+form {
+    border: 5px solid #f1f1f1;
+    /*width: 816px;*/
+    font-size: 24px;
+    padding: 62px;
+    text-align: center;
+    height: 50%;
+
+}
+html {
+    box-sizing: border-box;
+}
+
+button {
+background-color: #f5ad42;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 25%;
+}
+
+/* Add styles for the password eye icon */
+.password-container {
+position: relative;
+}
+.password-eye {
+position: absolute;
+right: 0;
+cursor: pointer;
+}
+.bootstrap-select.btn-group .dropdown-menu li a:hover {
+color: whitesmoke !important;
+background: #bf5279 !important;
+}
+.form-select 
+{
+width: auto;
+}
+.cont{
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.column {
+    float:left;
+    width: 33.3%;
+    margin-bottom:16px;
+    padding: 0 8px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 #574f44;
+    margin: 8px;
+}
+
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #373e4e;
+    color: white;
+}
+
+.container {
+    padding: 0 16px;    
+}
+
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table; 
+}
+
+.title {
+    color: grey;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #f5ad42;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+}
+
+.button:hover {
+    background-color: #171616;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-instagram {
+    background: #ef05b4;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SJCE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" href="headfoot.css">
+</head>
+<body>
+  <header>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <img src="logo-login.jpeg" alt="Paris" style="height: 58px; width: 400px;">
+        
+    </div>
+  </header>
+    <table class="content-table">
+        <thead>
+          <tr>
+            <th>Department Name</th>
+            <th>Upload Doucment</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Library</td>
+            <td>
+              <form action="/action_page.php">
+                <input type="file" id="myFile" name="filename">
+              </form>
+            </td>
+            <td class="status-column"></td>
+            <td><button id="Button1" class="request-button">Request</button></td>
+          </tr>
+          <tr>
+            <td>Placement Cell</td>
+            <td>
+              <form action="/action_page.php">
+                <input type="file" id="myFile" name="filename">
+              </form>
+            </td>
+            <td class="status-column"></td>
+            <td><button id="Button2" class="request-button">Request</button></td>
+          </tr>
+          <tr>
+            <td>Finance Section</td>
+            <td>
+              <form action="/action_page.php">
+                <input type="file" id="myFile" name="filename"> 
+              </form>
+            </td>
+            <td class="status-column"></td>
+            <td><button id="Button3" class="request-button">Request</button></td>
+          </tr>
+        </tbody>
+      </table>
+        <h2>Instruction for Uploading Documents</h2>
+        
+        <div class="row">
+          <div class="column" style="background-color:#aaa;">
+            <h2>Column 1</h2>
+            <p>Some text..</p>
+          </div>
+          <div class="column" style="background-color:#bbb;">
+            <h2>Column 2</h2>
+            <p>Some text..</p>
+          </div>
+          <div class="column" style="background-color:#ccc;">
+            <h2>Column 3</h2>
+            <p>Some text..</p>
+          </div>
+          <div class="column" style="background-color:#ddd;">
+            <h2>Column 4</h2>
+            <p>Some text..</p>
+          </div>
+        </div>
+      <table>
+        <div style="text-align: center; margin-top: 20px;">
+          <button onclick="document.getElementById('alert').style.display='block'">Save</button>
+          <button id="logoutBtn"> Logout </button>
+          <div id="alert" class="alert" style="display:none">
+            <span class="closebtn" onclick="document.getElementById('alert').style.display='none'">&times;</span> 
+            <strong>Success!</strong> Request sent successfully
+          </div>
+        </div>
+      </table>
+      <script>
+        const requestButtons = document.querySelectorAll(".request-button");
+        requestButtons.forEach(button => {
+          button.addEventListener("click", function() {
+            const statusColumn = button.parentNode.parentNode.children[2];
+            if (button.innerHTML === "Request") {
+              button.innerHTML = "Cancel";
+              statusColumn.innerHTML = "Pending";
+            } else {
+              button.innerHTML = "Request";
+              statusColumn.innerHTML = "";
+            }
+          });
+        });
+      </script>               
+</body>
+</html>
